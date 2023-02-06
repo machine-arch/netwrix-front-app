@@ -1,0 +1,66 @@
+.netwrix_header_conteiner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 37.5rem;
+  background-image: url(../../../public/assets/img/bg_large.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 4rem;
+  .netwrix_header_description_conteiner {
+    width: 42.75rem;
+    .netwrix_header_description {
+      font-size: 16px;
+      line-height: 2rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .netwrix_header_title_conteiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 2.8rem;
+        line-height: 4.5rem;
+        text-align: center;
+        color: var(--white);
+        font-family: OpenSansB;
+      }
+    }
+  }
+}
+
+.netwrix_header_top {
+  height: 3rem;
+  display: flex;
+  padding: 0 1.86rem;
+  img {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .netwrix_header_conteiner {
+    gap: 2rem;
+    .netwrix_header_description_conteiner {
+      width: 18.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      .netwrix_header_description {
+        font-size: 16px;
+        line-height: 1.75rem;
+      }
+      .netwrix_header_title_conteiner {
+        h1 {
+          font-size: 2.3em;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}

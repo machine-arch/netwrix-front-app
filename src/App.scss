@@ -1,0 +1,60 @@
+.netwrix_App {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "OpenSans";
+  background-color: var(--body-background);
+}
+
+/*=============================================dropdown===========================================*/
+.dropdown-inpt {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 4px;
+  width: 100%;
+  height: inherit;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.dropdown-inpt::placeholder {
+  color: var(--white);
+}
+.dropdown-inpt:active,
+.dropdown-inpt:focus {
+  outline: none;
+  border-radius: 4px 4px 0 0;
+}
+.border-radius-left {
+  border-radius: 4px 0 0 4px;
+}
+.border-radius-right {
+  border-radius: 0px 4px 4px 0;
+}
+/*=============================================end dropdown===========================================*/
+
+/* ============================================back to top button====================================== */
+#back-to-top-button {
+  display: inline-block;
+  background-color: var(--blue);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  z-index: 1000;
+}
+
+#back-to-top-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top-button:active {
+  background-color: #555;
+}
+
+/* ============================================end back to top button====================================== */
